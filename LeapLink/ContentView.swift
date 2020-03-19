@@ -7,34 +7,43 @@
 //
 
 import SwiftUI
+import SwiftUIFlux
+import SwiftUIExtensions
 
 struct ContentView: View {
-    let leapService = LeapService()
+    @EnvironmentObject var store: Store<AppState>
     
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .onAppear {
-                self.leapService.delegate = self
-                self.leapService.run()
+        currentView
+    }
+    
+    var currentView: AnyView {
+        if store.state.connectedLeapMotion == nil {
+            return TutorialView().eraseToAnyView()
+        } else {
+            return Text("b").eraseToAnyView()
         }
     }
 }
 
-extension ContentView: LeapServiceDelegate {
-    func willUpdateData() {
-        
-    }
-    
-    func didStopUpdatingData() {
-        
-    }
-    
-    func didUpdate(handRepresentation: LeapHandRepresentation) {
-        print(handRepresentation)
+struct ControlView: View {
+    var body: some View {
+        VStack {
+            HStack {
+                Image("LeapMotion").resizable()
+                    .aspectRatio(1.0, contentMode: .fit)
+                    .frame(maxWidth: 64)
+                
+                VStack(alignment: .leading) {
+                    Text("Leap Motion")
+                        .font(.title)
+                }
+                Spacer()
+            }
+            .padding(.bottom, 10)
+        }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

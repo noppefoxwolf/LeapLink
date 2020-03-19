@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,12 @@
 		37D17253242414F50066C15C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D17252242414F50066C15C /* Extensions.swift */; };
 		37D17254242415CC0066C15C /* libLeap.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 37D172472424137C0066C15C /* libLeap.dylib */; };
 		37D17257242416180066C15C /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37D172472424137C0066C15C /* libLeap.dylib */; };
+		37D1725A242424990066C15C /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = 37D17259242424990066C15C /* SwiftUIFlux */; };
+		37D1725D242425460066C15C /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1725C242425460066C15C /* State.swift */; };
+		37D1725F2424255A0066C15C /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1725E2424255A0066C15C /* Reducer.swift */; };
+		37D17261242425760066C15C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D17260242425760066C15C /* Store.swift */; };
+		37D1726A24242B480066C15C /* SwiftUIExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 37D1726924242B480066C15C /* SwiftUIExtensions */; };
+		37D1726D24242E2C0066C15C /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1726C24242E2C0066C15C /* TutorialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +68,10 @@
 		37D1724D242414040066C15C /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		37D1724F2424148B0066C15C /* LeapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapService.swift; sourceTree = "<group>"; };
 		37D17252242414F50066C15C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		37D1725C242425460066C15C /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		37D1725E2424255A0066C15C /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		37D17260242425760066C15C /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		37D1726C24242E2C0066C15C /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D1726A24242B480066C15C /* SwiftUIExtensions in Frameworks */,
 				37D1724C2424137C0066C15C /* libLeap.dylib in Frameworks */,
+				37D1725A242424990066C15C /* SwiftUIFlux in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +107,8 @@
 		37D1722D2424130C0066C15C /* LeapLink */ = {
 			isa = PBXGroup;
 			children = (
+				37D1726B24242D5C0066C15C /* UI */,
+				37D1725B242424F10066C15C /* SwiftUIFlux */,
 				37D17251242414E50066C15C /* Extensions */,
 				37D1724E242414820066C15C /* Service */,
 				37D172412424137C0066C15C /* Libraries */,
@@ -163,6 +177,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		37D1725B242424F10066C15C /* SwiftUIFlux */ = {
+			isa = PBXGroup;
+			children = (
+				37D1725C242425460066C15C /* State.swift */,
+				37D1725E2424255A0066C15C /* Reducer.swift */,
+				37D17260242425760066C15C /* Store.swift */,
+			);
+			path = SwiftUIFlux;
+			sourceTree = "<group>";
+		};
+		37D1726B24242D5C0066C15C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				37D1726C24242E2C0066C15C /* TutorialView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,6 +213,10 @@
 			dependencies = (
 			);
 			name = LeapLink;
+			packageProductDependencies = (
+				37D17259242424990066C15C /* SwiftUIFlux */,
+				37D1726924242B480066C15C /* SwiftUIExtensions */,
+			);
 			productName = LeapLink;
 			productReference = 37D1722B2424130C0066C15C /* LeapLink.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +245,10 @@
 				Base,
 			);
 			mainGroup = 37D172222424130C0066C15C;
+			packageReferences = (
+				37D17258242424990066C15C /* XCRemoteSwiftPackageReference "SwiftUIFlux" */,
+				37D1726824242B480066C15C /* XCRemoteSwiftPackageReference "SwiftUIExtensions" */,
+			);
 			productRefGroup = 37D1722C2424130C0066C15C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,9 +278,13 @@
 			files = (
 				37D17253242414F50066C15C /* Extensions.swift in Sources */,
 				37D1724B2424137C0066C15C /* LeapObjectiveC.mm in Sources */,
+				37D1726D24242E2C0066C15C /* TutorialView.swift in Sources */,
 				37D172312424130C0066C15C /* ContentView.swift in Sources */,
+				37D17261242425760066C15C /* Store.swift in Sources */,
 				37D1722F2424130C0066C15C /* AppDelegate.swift in Sources */,
+				37D1725F2424255A0066C15C /* Reducer.swift in Sources */,
 				37D172502424148B0066C15C /* LeapService.swift in Sources */,
+				37D1725D242425460066C15C /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +495,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37D17258242424990066C15C /* XCRemoteSwiftPackageReference "SwiftUIFlux" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dimillian/SwiftUIFlux";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+		37D1726824242B480066C15C /* XCRemoteSwiftPackageReference "SwiftUIExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/noppefoxwolf/SwiftUIExtensions";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37D17259242424990066C15C /* SwiftUIFlux */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37D17258242424990066C15C /* XCRemoteSwiftPackageReference "SwiftUIFlux" */;
+			productName = SwiftUIFlux;
+		};
+		37D1726924242B480066C15C /* SwiftUIExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37D1726824242B480066C15C /* XCRemoteSwiftPackageReference "SwiftUIExtensions" */;
+			productName = SwiftUIExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37D172232424130C0066C15C /* Project object */;
 }

@@ -15,7 +15,7 @@ protocol LeapServiceDelegate {
     func didUpdate(handRepresentation: LeapHandRepresentation)
 }
 
-class LeapService: NSObject, LeapListener {
+class LeapService: NSObject {
     
     var delegate: LeapServiceDelegate?
 
@@ -43,7 +43,7 @@ class LeapService: NSObject, LeapListener {
     }
 }
 
-extension LeapService {
+extension LeapService: LeapListener {
     
     func onInit(_ notification: Notification!) {
         print("LeapMotion Listener Initialized")

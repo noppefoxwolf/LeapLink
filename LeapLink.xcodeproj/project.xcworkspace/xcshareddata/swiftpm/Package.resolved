@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftUIExtensions",
+        "repositoryURL": "https://github.com/noppefoxwolf/SwiftUIExtensions",
+        "state": {
+          "branch": "master",
+          "revision": "5d175fceaceef59a4d49824b6c25737d452fb8d1",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftUIFlux",
+        "repositoryURL": "https://github.com/Dimillian/SwiftUIFlux",
+        "state": {
+          "branch": null,
+          "revision": "a48dd509702797028fa103844008239dded85063",
+          "version": "0.5.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
