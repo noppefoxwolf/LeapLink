@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37D1722F2424130C0066C15C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1722E2424130C0066C15C /* AppDelegate.swift */; };
+		37D172312424130C0066C15C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D172302424130C0066C15C /* ContentView.swift */; };
+		37D172332424130F0066C15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D172322424130F0066C15C /* Assets.xcassets */; };
+		37D172362424130F0066C15C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D172352424130F0066C15C /* Preview Assets.xcassets */; };
+		37D172392424130F0066C15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D172372424130F0066C15C /* Main.storyboard */; };
+		37D1724B2424137C0066C15C /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37D172452424137C0066C15C /* LeapObjectiveC.mm */; };
+		37D1724C2424137C0066C15C /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D172472424137C0066C15C /* libLeap.dylib */; };
+		37D172502424148B0066C15C /* LeapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1724F2424148B0066C15C /* LeapService.swift */; };
+		37D17253242414F50066C15C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D17252242414F50066C15C /* Extensions.swift */; };
+		37D17254242415CC0066C15C /* libLeap.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 37D172472424137C0066C15C /* libLeap.dylib */; };
+		37D17257242416180066C15C /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37D172472424137C0066C15C /* libLeap.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37D17255242415CC0066C15C /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37D17254242415CC0066C15C /* libLeap.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D17256242416130066C15C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				37D17257242416180066C15C /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		37D1722B2424130C0066C15C /* LeapLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D1722E2424130C0066C15C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37D172302424130C0066C15C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37D172322424130F0066C15C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37D172352424130F0066C15C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37D172382424130F0066C15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37D1723A2424130F0066C15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D1723B2424130F0066C15C /* LeapLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LeapLink.entitlements; sourceTree = "<group>"; };
+		37D172432424137C0066C15C /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		37D172442424137C0066C15C /* Leap.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = Leap.i; sourceTree = "<group>"; };
+		37D172452424137C0066C15C /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		37D172472424137C0066C15C /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		37D172482424137C0066C15C /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		37D172492424137C0066C15C /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		37D1724D242414040066C15C /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		37D1724F2424148B0066C15C /* LeapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapService.swift; sourceTree = "<group>"; };
+		37D17252242414F50066C15C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37D172282424130C0066C15C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D1724C2424137C0066C15C /* libLeap.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37D172222424130C0066C15C = {
+			isa = PBXGroup;
+			children = (
+				37D1722D2424130C0066C15C /* LeapLink */,
+				37D1722C2424130C0066C15C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37D1722C2424130C0066C15C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37D1722B2424130C0066C15C /* LeapLink.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37D1722D2424130C0066C15C /* LeapLink */ = {
+			isa = PBXGroup;
+			children = (
+				37D17251242414E50066C15C /* Extensions */,
+				37D1724E242414820066C15C /* Service */,
+				37D172412424137C0066C15C /* Libraries */,
+				37D1722E2424130C0066C15C /* AppDelegate.swift */,
+				37D172302424130C0066C15C /* ContentView.swift */,
+				37D172322424130F0066C15C /* Assets.xcassets */,
+				37D172372424130F0066C15C /* Main.storyboard */,
+				37D1723A2424130F0066C15C /* Info.plist */,
+				37D1723B2424130F0066C15C /* LeapLink.entitlements */,
+				37D172342424130F0066C15C /* Preview Content */,
+				37D1724D242414040066C15C /* BridgingHeader.h */,
+			);
+			path = LeapLink;
+			sourceTree = "<group>";
+		};
+		37D172342424130F0066C15C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				37D172352424130F0066C15C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37D172412424137C0066C15C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				37D172422424137C0066C15C /* LeapMotion */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		37D172422424137C0066C15C /* LeapMotion */ = {
+			isa = PBXGroup;
+			children = (
+				37D172432424137C0066C15C /* Leap.h */,
+				37D172442424137C0066C15C /* Leap.i */,
+				37D172452424137C0066C15C /* LeapObjectiveC.mm */,
+				37D172462424137C0066C15C /* lib */,
+				37D172482424137C0066C15C /* LeapMath.h */,
+				37D172492424137C0066C15C /* LeapObjectiveC.h */,
+			);
+			path = LeapMotion;
+			sourceTree = "<group>";
+		};
+		37D172462424137C0066C15C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				37D172472424137C0066C15C /* libLeap.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		37D1724E242414820066C15C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				37D1724F2424148B0066C15C /* LeapService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		37D17251242414E50066C15C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37D17252242414F50066C15C /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37D1722A2424130C0066C15C /* LeapLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37D1723E2424130F0066C15C /* Build configuration list for PBXNativeTarget "LeapLink" */;
+			buildPhases = (
+				37D172272424130C0066C15C /* Sources */,
+				37D172282424130C0066C15C /* Frameworks */,
+				37D172292424130C0066C15C /* Resources */,
+				37D17255242415CC0066C15C /* Embed Libraries */,
+				37D17256242416130066C15C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeapLink;
+			productName = LeapLink;
+			productReference = 37D1722B2424130C0066C15C /* LeapLink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37D172232424130C0066C15C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Tomoya Hirano";
+				TargetAttributes = {
+					37D1722A2424130C0066C15C = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 37D172262424130C0066C15C /* Build configuration list for PBXProject "LeapLink" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37D172222424130C0066C15C;
+			productRefGroup = 37D1722C2424130C0066C15C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37D1722A2424130C0066C15C /* LeapLink */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37D172292424130C0066C15C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D172392424130F0066C15C /* Main.storyboard in Resources */,
+				37D172362424130F0066C15C /* Preview Assets.xcassets in Resources */,
+				37D172332424130F0066C15C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37D172272424130C0066C15C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D17253242414F50066C15C /* Extensions.swift in Sources */,
+				37D1724B2424137C0066C15C /* LeapObjectiveC.mm in Sources */,
+				37D172312424130C0066C15C /* ContentView.swift in Sources */,
+				37D1722F2424130C0066C15C /* AppDelegate.swift in Sources */,
+				37D172502424148B0066C15C /* LeapService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		37D172372424130F0066C15C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37D172382424130F0066C15C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37D1723C2424130F0066C15C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37D1723D2424130F0066C15C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		37D1723F2424130F0066C15C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LeapLink/LeapLink.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"LeapLink/Preview Content\"";
+				DEVELOPMENT_TEAM = FBQ6Z8AF3U;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LeapLink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LeapLink/Libraries/LeapMotion/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.noppe.LeapLink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = LeapLink/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		37D172402424130F0066C15C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LeapLink/LeapLink.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"LeapLink/Preview Content\"";
+				DEVELOPMENT_TEAM = FBQ6Z8AF3U;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LeapLink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LeapLink/Libraries/LeapMotion/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.noppe.LeapLink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = LeapLink/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37D172262424130C0066C15C /* Build configuration list for PBXProject "LeapLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37D1723C2424130F0066C15C /* Debug */,
+				37D1723D2424130F0066C15C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37D1723E2424130F0066C15C /* Build configuration list for PBXNativeTarget "LeapLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37D1723F2424130F0066C15C /* Debug */,
+				37D172402424130F0066C15C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37D172232424130C0066C15C /* Project object */;
+}
